@@ -11,7 +11,7 @@ async function getUserById(id) {
 }
 
 async function getUserByEmail(email) {
-  const user = await UserModel.findOne(email);
+  const user = await UserModel.findOne({email});
   return user;
 }
 
